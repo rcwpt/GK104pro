@@ -316,4 +316,464 @@
                 </div>
                 
                 <div class="p-8 grid md:grid-cols-3 gap-8">
-                    <!-
+                    <!-- Step 1 -->
+                    <div class="text-center group">
+                        <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-300 rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4 group-hover:scale-110 transition">1</div>
+                        <h4 data-key="switch_label" class="font-bold text-gray-800 dark:text-white mb-2">Switch</h4>
+                        <p data-key="switch_right" class="text-sm text-gray-600 dark:text-gray-300">Switch to <strong>RIGHT</strong>.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="text-center group">
+                        <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-300 rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4 group-hover:scale-110 transition">2</div>
+                        <h4 data-key="plug_dongle" class="font-bold text-gray-800 dark:text-white mb-2">Plug Dongle</h4>
+                        <p data-key="plug_pc" class="text-sm text-gray-600 dark:text-gray-300">Plug USB Dongle into PC.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center group">
+                        <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-300 rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4 group-hover:scale-110 transition">3</div>
+                        <h4 data-key="activate" class="font-bold text-gray-800 dark:text-white mb-2">Activate</h4>
+                        <p data-key="press_combo" class="text-sm text-gray-600 dark:text-gray-300 mb-2">Press combination:</p>
+                        <div class="flex items-center justify-center gap-1">
+                            <span class="key key-light">FN</span> + <span class="key key-light">4</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tips Footer -->
+                <div class="bg-emerald-50/50 dark:bg-emerald-900/20 p-4 text-center border-t border-emerald-100 dark:border-emerald-800">
+                    <p class="text-xs text-emerald-700 dark:text-emerald-300 flex items-center justify-center gap-2">
+                        <i data-lucide="help-circle" class="w-4 h-4"></i>
+                        <span data-key="wifi_trouble"><strong>Connection Issue?</strong> Hold <strong>FN + 4</strong> (3s) then replug dongle.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. WIRED SECTION -->
+            <div class="bg-white dark:bg-slate-800 rounded-3xl shadow-lg border border-orange-100 dark:border-orange-900 overflow-hidden transition-colors">
+                <div class="bg-orange-50 dark:bg-orange-900/30 p-6 border-b border-orange-100 dark:border-orange-800 flex items-center gap-4">
+                    <div class="bg-orange-600 text-white p-3 rounded-xl shadow-lg shadow-orange-200 dark:shadow-none">
+                        <i data-lucide="cable" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 data-key="wired_mode" class="text-2xl font-bold text-orange-900 dark:text-orange-200">Wired Mode</h3>
+                        <p data-key="wired_desc" class="text-orange-700 dark:text-orange-300 text-sm">Required for charging & firmware updates</p>
+                    </div>
+                </div>
+                
+                <div class="p-8 flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1 space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 p-2 rounded-lg shrink-0">
+                                <i data-lucide="toggle-left" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 data-key="set_switch" class="font-bold text-gray-800 dark:text-white">1. Set Switch</h4>
+                                <p data-key="switch_left" class="text-sm text-gray-600 dark:text-gray-300">Toggle switch to <strong>LEFT</strong>.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 p-2 rounded-lg shrink-0">
+                                <i data-lucide="plug" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 data-key="connect_cable" class="font-bold text-gray-800 dark:text-white">2. Connect Cable</h4>
+                                <p data-key="use_usbc" class="text-sm text-gray-600 dark:text-gray-300">Use the included USB-C cable.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-orange-50 dark:bg-orange-900/20 p-5 rounded-2xl border border-orange-100 dark:border-orange-800 w-full md:w-auto min-w-[250px]">
+                        <h4 data-key="pro_tip" class="font-bold text-orange-800 dark:text-orange-200 mb-3 text-sm uppercase tracking-wide">Pro Tip</h4>
+                        <p data-key="quick_switch" class="text-xs text-orange-700 dark:text-orange-300 mb-3">Quickly toggle between last Wireless mode and Wired without physical switch:</p>
+                        <div class="flex items-center justify-center gap-1 bg-white dark:bg-slate-700 p-3 rounded-xl border border-orange-200 dark:border-slate-600 shadow-sm">
+                            <span class="key key-light text-sm">FN</span> + <span class="key key-light text-sm w-16">SPACE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEATSHEET -->
+        <section class="bg-slate-900 dark:bg-black text-white rounded-3xl p-8 shadow-2xl overflow-hidden relative border border-slate-700">
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+            <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+
+            <div class="relative z-10">
+                <div class="flex items-center justify-center gap-3 mb-10">
+                    <i data-lucide="zap" class="w-8 h-8 text-yellow-400"></i>
+                    <h2 data-key="shortcuts" class="text-3xl font-bold text-white">Quick Shortcuts</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-slate-800/60 backdrop-blur-md border border-slate-600 p-6 rounded-2xl hover:bg-slate-800 transition">
+                        <div class="flex items-center gap-3 mb-5 border-b border-slate-700 pb-3">
+                            <i data-lucide="settings" class="w-5 h-5 text-blue-400"></i>
+                            <h4 data-key="system_reset" class="text-blue-400 font-bold uppercase text-xs tracking-widest">System & Reset</h4>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center group">
+                                <span data-key="factory_reset" class="text-sm text-slate-300 group-hover:text-white transition">Factory Reset</span>
+                                <div class="flex"><span class="key key-dark">FN</span><span class="key key-dark">ESC</span></div>
+                            </div>
+                            <div data-key="hold_5s" class="text-right text-[10px] text-slate-500 -mt-2 italic">(Hold 5 sec)</div>
+                            <div class="flex justify-between items-center group">
+                                <span class="text-sm text-slate-300 group-hover:text-white transition">Win Lock</span>
+                                <div class="flex"><span class="key key-dark">FN</span><span class="key key-dark">WIN</span></div>
+                            </div>
+                            <div class="flex justify-between items-center group">
+                                <span data-key="check_bat" class="text-sm text-slate-300 group-hover:text-white transition">Check Battery</span>
+                                <div class="flex"><span class="key key-dark">FN</span><span class="key key-dark">4</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/60 backdrop-blur-md border border-slate-600 p-6 rounded-2xl hover:bg-slate-800 transition">
+                        <div class="flex items-center gap-3 mb-5 border-b border-slate-700 pb-3">
+                            <i data-lucide="sun" class="w-5 h-5 text-pink-400"></i>
+                            <h4 data-key="rgb_light" class="text-pink-400 font-bold uppercase text-xs tracking-widest">RGB Lighting</h4>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center group">
+                                <span class="text-sm text-slate-300 group-hover:text-white transition">ON / OFF</span>
+                                <div class="flex"><span class="key key-dark">FN</span><span class="key key-dark">9</span></div>
+                            </div>
+                            <div class="flex justify-between items-center group">
+                                <span data-key="pause_effect" class="text-sm text-slate-300 group-hover:text-white transition">Pause Effect</span>
+                                <div class="flex"><span class="key key-dark">FN</span><span class="key key-dark">0</span></div>
+                            </div>
+                            <div class="flex justify-between items-center group">
+                                <span data-key="change_mode" class="text-sm text-slate-300 group-hover:text-white transition">Change Mode</span>
+                                <div class="flex"><span class="key key-dark">FN</span><span class="key key-dark">1-5</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/60 backdrop-blur-md border border-slate-600 p-6 rounded-2xl hover:bg-slate-800 transition">
+                        <div class="flex items-center gap-3 mb-5 border-b border-slate-700 pb-3">
+                            <i data-lucide="music" class="w-5 h-5 text-green-400"></i>
+                            <h4 data-key="unique_feat" class="text-green-400 font-bold uppercase text-xs tracking-widest">Unique Features</h4>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center group">
+                                <span data-key="typing_sound" class="text-sm text-slate-300 group-hover:text-white transition">Typing Sound</span>
+                                <div class="flex"><span class="key key-dark">FN</span><span class="key key-dark">-</span></div>
+                            </div>
+                            <div class="flex justify-between items-center group">
+                                <span class="text-sm text-slate-300 group-hover:text-white transition">Voice Info</span>
+                                <div class="flex"><span class="key key-dark">FN</span><span class="key key-dark">0</span></div>
+                            </div>
+                            <div class="flex justify-between items-center group">
+                                <span data-key="calc" class="text-sm text-slate-300 group-hover:text-white transition">Calculator</span>
+                                <div class="text-xs bg-slate-700 px-2 py-1 rounded text-white font-mono border border-slate-600">Numpad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unboxing Grid (Footer) -->
+        <section class="py-8">
+            <h2 data-key="box_content" class="text-2xl font-bold text-center mb-8 text-gray-800 dark:text-white flex items-center justify-center gap-2">
+                <i data-lucide="package-open" class="text-violet-600"></i> What's in the Box
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-violet-50 dark:bg-violet-900/30 p-3 rounded-full text-violet-600 dark:text-violet-300"><i data-lucide="keyboard" class="w-6 h-6"></i></div>
+                    <span data-key="item_kb" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">Keyboard</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-blue-50 dark:bg-blue-900/30 p-3 rounded-full text-blue-600 dark:text-blue-300"><i data-lucide="book-open" class="w-6 h-6"></i></div>
+                    <span data-key="item_manual" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">Manual</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-gray-50 dark:bg-slate-700 p-3 rounded-full text-gray-600 dark:text-gray-300"><i data-lucide="shield" class="w-6 h-6"></i></div>
+                    <span data-key="item_dust" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">Dust Cover</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-orange-50 dark:bg-orange-900/30 p-3 rounded-full text-orange-600 dark:text-orange-300"><i data-lucide="cable" class="w-6 h-6"></i></div>
+                    <span data-key="item_cable" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">USB-C Cable</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-green-50 dark:bg-green-900/30 p-3 rounded-full text-green-600 dark:text-green-300"><i data-lucide="cpu" class="w-6 h-6"></i></div>
+                    <span data-key="item_switch" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">Extra Switch</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-pink-50 dark:bg-pink-900/30 p-3 rounded-full text-pink-600 dark:text-pink-300"><i data-lucide="grid-3x3" class="w-6 h-6"></i></div>
+                    <span data-key="item_keycaps" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">Keycaps</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-slate-50 dark:bg-slate-700 p-3 rounded-full text-slate-600 dark:text-slate-300"><i data-lucide="wrench" class="w-6 h-6"></i></div>
+                    <span data-key="item_puller" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">Puller 2-in-1</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-emerald-50 dark:bg-emerald-900/30 p-3 rounded-full text-emerald-600 dark:text-emerald-300"><i data-lucide="usb" class="w-6 h-6"></i></div>
+                    <span data-key="item_dongle" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">Dongle 2.4G</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-yellow-50 dark:bg-yellow-900/30 p-3 rounded-full text-yellow-600 dark:text-yellow-300"><i data-lucide="scale" class="w-6 h-6"></i></div>
+                    <span data-key="item_stabs" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">Stabilizer</span>
+                </div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 flex flex-col items-center justify-center gap-3 text-center icon-box transition hover:shadow-md">
+                    <div class="bg-cyan-50 dark:bg-cyan-900/30 p-3 rounded-full text-cyan-600 dark:text-cyan-300"><i data-lucide="layers" class="w-6 h-6"></i></div>
+                    <span data-key="item_silicone" class="font-semibold text-gray-700 dark:text-gray-200 text-sm">Silicone</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script>
+        // --- TRANSLATION DATA ---
+        const translations = {
+            en: {
+                flag: "🇺🇸",
+                hero_subtitle: "Interactive User Guide & Driver",
+                driver_title: "Driver & Software",
+                driver_warning: "Must use <strong>USB Cable</strong> to customize settings via software.",
+                driver_win: "Windows Driver",
+                driver_mac: "MacOS Driver",
+                conn_title: "Connection Center",
+                conn_subtitle: "Choose your preferred connection method",
+                bt_mode: "Bluetooth Mode",
+                bt_desc: "Connect to Phone, Tablet, or Laptop without dongle",
+                step_1: "STEP 1",
+                switch_mid: "Toggle the back switch to the <strong>MIDDLE</strong> position.",
+                pair_new: "Pair New Device",
+                pair_desc: "Use this when connecting for the first time.",
+                hold_3s: "Press & Hold (3-5 Sec)",
+                light_fast: "Number 1 light flashes <strong>FAST</strong>.",
+                find_device: "Find <strong>\"GK104Pro\"</strong> on your device settings.",
+                switch_dev: "Switch Device",
+                switch_desc: "Use this to swap between saved devices.",
+                dev_1: "Device 1",
+                dev_2: "Device 2",
+                dev_3: "Device 3",
+                short_press: "Short Press",
+                wifi_mode: "2.4G Wireless Mode",
+                wifi_desc: "Stable & Low Latency via USB Dongle",
+                switch_label: "Switch",
+                switch_right: "Switch to <strong>RIGHT</strong>.",
+                plug_dongle: "Plug Dongle",
+                plug_pc: "Plug USB Dongle into PC.",
+                activate: "Activate",
+                press_combo: "Press combination:",
+                wifi_trouble: "<strong>Connection Issue?</strong> Hold <strong>FN + 4</strong> (3s) then replug dongle.",
+                wired_mode: "Wired Mode",
+                wired_desc: "Required for charging & firmware updates",
+                set_switch: "1. Set Switch",
+                switch_left: "Toggle switch to <strong>LEFT</strong>.",
+                connect_cable: "2. Connect Cable",
+                use_usbc: "Use the included USB-C cable.",
+                pro_tip: "Pro Tip",
+                quick_switch: "Quickly toggle between last Wireless mode and Wired without physical switch:",
+                shortcuts: "Quick Shortcuts",
+                system_reset: "System & Reset",
+                factory_reset: "Factory Reset",
+                hold_5s: "(Hold 5 sec)",
+                check_bat: "Check Battery",
+                rgb_light: "RGB Lighting",
+                pause_effect: "Pause Effect",
+                change_mode: "Change Mode",
+                unique_feat: "Unique Features",
+                typing_sound: "Typing Sound",
+                calc: "Calculator",
+                box_content: "What's in the Box",
+                item_kb: "Keyboard",
+                item_manual: "Manual",
+                item_dust: "Dust Cover",
+                item_cable: "USB-C Cable",
+                item_switch: "Extra Switch",
+                item_keycaps: "Keycaps",
+                item_puller: "Puller 2-in-1",
+                item_dongle: "Dongle 2.4G",
+                item_stabs: "Stabilizer",
+                item_silicone: "Silicone"
+            },
+            id: {
+                flag: "🇮🇩",
+                hero_subtitle: "Panduan Pengguna Interaktif & Driver",
+                driver_title: "Driver & Software",
+                driver_warning: "Wajib menggunakan <strong>Kabel USB</strong> untuk mengubah pengaturan via software.",
+                driver_win: "Driver Windows",
+                driver_mac: "Driver MacOS",
+                conn_title: "Pusat Konektivitas",
+                conn_subtitle: "Pilih metode koneksi yang Anda inginkan",
+                bt_mode: "Mode Bluetooth",
+                bt_desc: "Hubungkan ke HP, Tablet, atau Laptop tanpa dongle",
+                step_1: "LANGKAH 1",
+                switch_mid: "Geser sakelar belakang ke posisi <strong>TENGAH</strong>.",
+                pair_new: "Pairing Perangkat Baru",
+                pair_desc: "Gunakan ini saat pertama kali menghubungkan perangkat.",
+                hold_3s: "Tekan & Tahan (3-5 Detik)",
+                light_fast: "Lampu angka 1 berkedip <strong>CEPAT</strong>.",
+                find_device: "Cari <strong>\"GK104Pro\"</strong> di pengaturan perangkat Anda.",
+                switch_dev: "Ganti Perangkat",
+                switch_desc: "Gunakan ini untuk berpindah antar perangkat tersimpan.",
+                dev_1: "Perangkat 1",
+                dev_2: "Perangkat 2",
+                dev_3: "Perangkat 3",
+                short_press: "Tekan Singkat",
+                wifi_mode: "Mode Wireless 2.4G",
+                wifi_desc: "Stabil & Latensi Rendah via Dongle USB",
+                switch_label: "Sakelar",
+                switch_right: "Geser ke <strong>KANAN</strong>.",
+                plug_dongle: "Pasang Dongle",
+                plug_pc: "Colok Dongle USB ke PC.",
+                activate: "Aktifkan",
+                press_combo: "Tekan kombinasi:",
+                wifi_trouble: "<strong>Masalah Koneksi?</strong> Tahan <strong>FN + 4</strong> (3dtk) lalu pasang ulang dongle.",
+                wired_mode: "Mode Kabel",
+                wired_desc: "Wajib untuk charging & update firmware",
+                set_switch: "1. Atur Sakelar",
+                switch_left: "Geser sakelar ke <strong>KIRI</strong>.",
+                connect_cable: "2. Hubungkan Kabel",
+                use_usbc: "Gunakan kabel USB-C yang tersedia.",
+                pro_tip: "Tips Pro",
+                quick_switch: "Pindah cepat antara Wireless & Kabel tanpa sakelar fisik:",
+                shortcuts: "Pintasan Cepat",
+                system_reset: "Sistem & Reset",
+                factory_reset: "Reset Pabrik",
+                hold_5s: "(Tahan 5 detik)",
+                check_bat: "Cek Baterai",
+                rgb_light: "Lampu RGB",
+                pause_effect: "Jeda Efek",
+                change_mode: "Ganti Mode",
+                unique_feat: "Fitur Unik",
+                typing_sound: "Suara Ketik",
+                calc: "Kalkulator",
+                box_content: "Isi Dalam Kotak",
+                item_kb: "Keyboard",
+                item_manual: "Manual",
+                item_dust: "Cover Debu",
+                item_cable: "Kabel USB-C",
+                item_switch: "Switch Ekstra",
+                item_keycaps: "Keycaps",
+                item_puller: "Penarik 2-in-1",
+                item_dongle: "Dongle 2.4G",
+                item_stabs: "Stabilizer",
+                item_silicone: "Silikon"
+            },
+            zh: {
+                flag: "🇨🇳",
+                hero_subtitle: "交互式用户指南和驱动程序",
+                driver_title: "驱动程序和软件",
+                driver_warning: "必须使用 <strong>USB 数据线</strong> 才能通过软件自定义设置。",
+                driver_win: "Windows 驱动",
+                driver_mac: "MacOS 驱动",
+                conn_title: "连接中心",
+                conn_subtitle: "选择您喜欢的连接方式",
+                bt_mode: "蓝牙模式",
+                bt_desc: "无需接收器即可连接手机、平板或笔记本电脑",
+                step_1: "步骤 1",
+                switch_mid: "将背面开关拨至 <strong>中间</strong> 位置。",
+                pair_new: "配对新设备",
+                pair_desc: "首次连接设备时使用此功能。",
+                hold_3s: "长按 (3-5 秒)",
+                light_fast: "数字 1 灯光 <strong>快速</strong> 闪烁。",
+                find_device: "在设备设置中找到 <strong>\"GK104Pro\"</strong>。",
+                switch_dev: "切换设备",
+                switch_desc: "用于在已保存的设备之间切换。",
+                dev_1: "设备 1",
+                dev_2: "设备 2",
+                dev_3: "设备 3",
+                short_press: "短按",
+                wifi_mode: "2.4G 无线模式",
+                wifi_desc: "通过 USB 接收器实现稳定且低延迟的连接",
+                switch_label: "开关",
+                switch_right: "拨至 <strong>右侧</strong>。",
+                plug_dongle: "插入接收器",
+                plug_pc: "将 USB 接收器插入电脑。",
+                activate: "激活",
+                press_combo: "按下组合键：",
+                wifi_trouble: "<strong>连接问题？</strong> 长按 <strong>FN + 4</strong> (3秒) 然后重新插入接收器。",
+                wired_mode: "有线模式",
+                wired_desc: "充电和固件更新所需",
+                set_switch: "1. 设置开关",
+                switch_left: "将开关拨至 <strong>左侧</strong>。",
+                connect_cable: "2. 连接数据线",
+                use_usbc: "使用附带的 USB-C 数据线。",
+                pro_tip: "专业提示",
+                quick_switch: "无需物理开关即可在无线和有线模式之间快速切换：",
+                shortcuts: "快捷键",
+                system_reset: "系统与重置",
+                factory_reset: "恢复出厂设置",
+                hold_5s: "(长按 5 秒)",
+                check_bat: "检查电池",
+                rgb_light: "RGB 灯光",
+                pause_effect: "暂停特效",
+                change_mode: "切换模式",
+                unique_feat: "独特功能",
+                typing_sound: "打字音效",
+                calc: "计算器",
+                box_content: "包装内容",
+                item_kb: "键盘",
+                item_manual: "说明书",
+                item_dust: "防尘罩",
+                item_cable: "USB-C 数据线",
+                item_switch: "备用轴体",
+                item_keycaps: "键帽",
+                item_puller: "二合一拔键器",
+                item_dongle: "2.4G 接收器",
+                item_stabs: "卫星轴",
+                item_silicone: "硅胶垫"
+            }
+        };
+
+        // --- THEME & LANGUAGE LOGIC ---
+        
+        function updateContent(lang) {
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            document.getElementById('currentFlag').innerText = translations[lang].flag;
+            document.getElementById('currentLangCode').innerText = lang.toUpperCase();
+            localStorage.setItem('userLang', lang);
+        }
+
+        function setLanguage(lang) {
+            updateContent(lang);
+        }
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Initialize
+        window.addEventListener('load', function() {
+            // Load Icons
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+
+            // Init Language
+            const savedLang = localStorage.getItem('userLang') || 'en';
+            updateContent(savedLang);
+
+            // Init Theme
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+</body>
+</html>
+
